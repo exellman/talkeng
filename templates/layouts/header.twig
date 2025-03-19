@@ -1,0 +1,19 @@
+<header class="site-header">
+    <div class="container">
+        <div class="header-holder">
+            <div class="logo">
+                <a href="{{ site.url }}"><span>{</span> talkeng <span>}</span></a>
+            </div>
+
+            <nav class="main-nav">
+                {{ function('wp_nav_menu', {'theme_location': 'primary'}) }}
+            </nav>
+
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>

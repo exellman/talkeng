@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html {{ function('language_attributes') }}>
+<head>
+    <meta charset="{{ function('bloginfo', 'charset') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk Eng Курси</title>
+    {{ function('wp_head') }}
+</head>
+<body {{ function('body_class') }}>
+    {% include 'layouts/header.twig' %}
+
+    <main>
+        {{ block('content') }}
+    </main>
+
+    {% include 'layouts/footer.twig' %}
+    {{ function('wp_footer') }}
+</body>
+</html>

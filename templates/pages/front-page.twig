@@ -1,0 +1,7 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+    {% include 'components/banner.twig' with { banner: banner } %}
+    {% include 'components/courses.twig' with { courses: courses } %}
+    {% include 'components/contacts.twig' with { contacts: contacts } %}
+{% endblock %}

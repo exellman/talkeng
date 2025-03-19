@@ -1,0 +1,24 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+    {% include 'components/banner.twig' with { banner: banner } %}
+    
+     <div class="page-content">
+        <div class="container">
+            {{ post.content|raw }}
+
+
+            <div class="popup-content inner-form">
+                {% include 'components/form.twig' %}
+            </div>
+
+
+
+
+                
+        </div>
+    </div>
+    
+    
+    {% include 'components/courses.twig' with { courses: courses } %}
+{% endblock %}

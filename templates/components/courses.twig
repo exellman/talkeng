@@ -1,0 +1,17 @@
+<section class="courses-sec" id="courses">
+    <div class="container">
+        <h2>{{ courses.title }}</h2>
+        <div class="courses-holder default-dots">
+            {% for course in courses.items %}
+                <div class="course {{ course.title|lower }}" style="background-image: url('{{ course.thumbnail }}');">
+                    <div>
+                        <h3>{{ course.title }}</h3>
+                        <p>{{ course.excerpt }}</p>
+                    </div>
+                    <button class="btn btn-primary open-popup" data-course="{{ course.title }}">Замовити курс {{ course.title }}</a>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="http://localhost/courses/english/" class="btn btn-more">Детальніше</a>
+    </div>
+</section>

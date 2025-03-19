@@ -1,0 +1,20 @@
+<form id="course-form" method="POST" data-action="submit_course_form">
+        <h2 id="popup-title">{{ popup.form_title }}</h2>
+            <input type="hidden" name="course_name" id="course-name" value="Просто консультація">
+            <div>
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required placeholder="Ваше ім'я">
+            </div>
+            <div>
+                <label for="phone">Ваш телефон:</label>
+                <input type="tel" id="phone" name="phone" required inputmode="numeric" pattern="[0-9+() -]{7,15}" placeholder="+380123456789" minlength="10" maxlength="13">
+            </div>
+            <div>
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Ваш Email">
+            </div>
+            <button type="submit" class="btn btn-primary">{{ popup.submit_text }}</button>
+        </form>
+        <div id="thank-you-message" style="display: none;">
+            <h2>{{ popup.thank_you_text }}</h2>
+        </div>
